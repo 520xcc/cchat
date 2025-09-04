@@ -1,0 +1,90 @@
+# 1. 先忽略所有文件
+*
+!*/
+
+# 2. 再把真正需要提交的目录/文件拉回来
+!src/
+!*.h
+!*.c
+!*.cpp
+!*.hpp
+!*.qml
+!*.pro
+!CMakeLists.txt
+!*.md
+!.gitignore
+!*.ui
+!*.js
+!*.json
+!*.jpg
+!*.png
+!*.proto
+
+# 3. 继续排除子目录里的构建产物
+build/
+build-*/
+cmake-build-*/
+*.o
+*.obj
+*.exe
+*.ptch
+*.tmp
+*.log
+*.exe~
+*.bin
+*.elf
+
+# 构建目录
+build/
+cmake-build-*/
+build-*/
+Makefile
+CMakeCache.txt
+CMakeFiles/
+x64
+cmake_install.cmake
+server/VerifyServer/node_modules
+
+# IDE相关
+.vscode/
+.vs
+.idea/
+*.swp
+*.swo
+*~
+*.ipch
+
+# 调试和临时文件
+*.d
+*.log
+*.tmp
+*.bak
+.DS_Store
+
+# 版本控制
+.git/
+
+# 可执行文件
+cchat/cchat
+server/server
+
+# 依赖库（如果使用静态库）
+*.a
+*.lib
+*.dll
+*.so
+
+# Coverage reports
+gcov/
+lcov/
+*.gcda
+*.gcno
+
+# Valgrind输出
+valgrind.log*
+
+# 编译器和工具生成的文件
+compile_commands.json
+tags
+cscope.*
+
