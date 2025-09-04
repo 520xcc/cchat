@@ -43,7 +43,7 @@ CMakeCache.txt
 CMakeFiles/
 x64
 cmake_install.cmake
-server/VerifyServer/node_modules
+server/VerifyServer/node_modules/
 
 # IDE相关
 .vscode/
